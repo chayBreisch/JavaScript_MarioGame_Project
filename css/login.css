@@ -1,0 +1,149 @@
+
+
+body{
+    background-image: url('..//pictures/cloudsMoving.gif');
+}
+
+#formIdSignUp, #formIdLogIn{
+    /* position: relative; */
+    margin: 3%;
+    float: right;
+    text-align: center;
+    background-color:white;
+    width: 30%;
+    height: auto;
+    padding: 3% ,3%,3% ,3%;
+    z-index: 15;
+}
+
+#h1FormLogIn,#h1FormSignUp{
+    margin: 5%;
+    padding: 2%;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+input {
+    width: 70%; 
+    margin: 3%;
+    padding: 2%;
+    border-radius: 3px;
+}
+#btnGuesst{
+    width: 25px;
+    background-color: white;
+    border-radius: 2px;
+}
+
+button{
+    width: 75%; 
+    margin: 2%;
+    padding: 2%;
+    /* font-size: 2vw; */
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    border: 3px solid rgb(51, 51, 235);
+    border-radius: 3px;
+}
+#formIdSignUp #reset, #logInBottom{
+    margin-bottom: 10%;
+}
+
+#reset{
+    background-color: red;
+    border: 3px solid rgb(245, 68, 68);
+}
+#signUpLink{
+    background-color: blue;
+    border: 3px solid rgb(51, 51, 235); 
+}
+
+#logInLink,#login{
+    background-color: rgb(12, 241, 5);
+    border: 3px solid rgb(46, 241, 39);
+}
+a{
+    text-decoration: none;
+    width: 75%; 
+    margin: 2%;
+    padding: 2%;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+}
+#form{
+    z-index: 80;
+}
+#buttonsContainer{
+    margin-top: 20%;
+}
+
+#formIdSignIn input{
+    margin: 1%;
+    padding: 2%;
+}
+
+#facebook,#google{
+    width: 8%;
+    height: auto;
+    float: left;
+}
+#logInfacebook{
+    font-size: 20px;
+    background-color: rgb(0, 102, 255);
+    border: 2px solid rgb(39, 122, 245);
+}
+#logInGoogle{
+    font-size: 20px;
+    margin-bottom: 8%;
+    background-color: rgb(33, 143, 245);
+    border: 2px solid rgb(72, 163, 248); 
+}
+
+#ball{
+    width: 30%;
+    height: auto;
+    position: absolute;
+    bottom: 15%; 
+    left: 0%;
+    z-index: 10;
+}
+
+#groundGameBoard{
+    width: 100%;
+    height: auto;
+    /* height: auto; */
+    position: absolute;
+    bottom: 0%; 
+    left: 0%;
+    z-index: 5;
+}
+#btnSetting,#btnHoues{
+    font-size: 180%;
+    text-decoration: none;
+    margin: 500px 0 0 2%;
+    color: black;
+ }
+
+ #guess{
+    text-shadow: "1px 1px black";
+     /* background-color: white; */
+ }
+
+
+ @media screen and (max-width: 600px) {
+    #groundGameBoard{
+        height: 22vw;
+    }
+    #ball{
+        width: 30vw;
+    }
+    #logInGoogle,#logInfacebook{
+        font-size: 2vw;
+    }
+ }

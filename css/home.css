@@ -1,0 +1,19 @@
+#select{
+    display: grid;
+    grid-template: repeat(2, auto)/ repeat(2, auto);
+    text-align: center;
+    /* grid-gap: 3%; */
+    margin: 20%;
+}
+
+img{
+    width: 50%;
+    height: auto;
+    cursor: pointer;
+}
+#btnSetting,#btnHoues{
+    font-size: 180%;
+    text-decoration: none;
+    margin: 500px 0 0 2%;
+    color: black;
+}

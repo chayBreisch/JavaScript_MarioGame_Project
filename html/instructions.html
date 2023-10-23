@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Instructions</title>
+    <link href="../css/insrtuctions.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <header>
+        <a href="levels.html" id="btnSetting" onmouseover="hoverBtn()">
+            <i class="bi bi-house-door"></i>
+        </a>
+        <a href="main.html">Game</a>
+        <img src="../pictures/gameLogo.png" id="gameLogo">
+    </header>
+    <div id="body">
+        <table id="tableOne">
+            <tr>
+                <td>
+                    <p>To start game press : </p>
+                </td>
+                <td>
+                    <button id="startGame" onclick="startGame()">Start Game</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>To jump press arrow-up or space.</p>
+                </td>
+
+                <td>
+                    <i class="bi bi-arrow-up-square-fill" id=arrow></i>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Counts Your score:</p>
+                </td>
+                <td>
+                    <div id="scores">score: 0</div>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Counts Stars</p>
+                </td>
+                <td>
+                    <div id="tree">
+                        <img class="char" src="..//pictures/star.gif" id="imgStar">
+                    </div>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <p>To return to home page:</p>
+                </td>
+                <td>
+                    <i class="bi bi-house-door"></i>
+                </td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p>Settings:</p>
+                </td>
+                <td>
+                    <i class="bi bi-gear" id="btnHoues" onclick="showSetting()"></i>
+                </td>
+
+
+            </tr>
+        </table>
+        <table id="tableTwo">
+            <tr>
+                <td>
+                    <p id="title"> To choose a character:</p>
+                </td>
+                <td>
+                    <p> </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> ball:</p>
+                </td>
+                <td>
+                    <img class="char" src="../pictures/ball.gif" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>mario:</p>
+                </td>
+                <td>
+                    <img class="char" src="../pictures/marioRuning.gif" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> sonic:</p>
+                </td>
+                <td>
+                    <img class="char" src="../pictures/sonic.gif" />
+                </td>
+            </tr>
+        </table>
+        <table id="tableTwo">
+            <tr>
+                <td>
+                    <p id="title2">To change the background color:</p>
+                </td>
+                <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="colortxt" id="pinkP"> pink:</p>
+                </td>
+                <td>
+                    <div class="color" id="pink"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="colortxt" id="orangeP">orange:</p>
+                </td>
+                <td>
+                    <div class="color" id="orange"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="colortxt" class="color" id="greenP"> green:</p>
+                </td>
+                <td>
+                    <div class="color" id="green"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="colortxt" id="lightBlueP"> lightBlue:</p>
+                </td>
+                <td>
+                    <div class="color" id="lightBlue"></div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="colortxt" id="blueP"> blue:</p>
+                </td>
+                <td>
+                    <div class="color" id="blue"></div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <video autoplay loop muted id="videoGame">
+        <source src="../video/videoGame.mp4">
+    </video>
+</body>
+
+</html>

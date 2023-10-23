@@ -1,0 +1,179 @@
+body{
+    background-color: rgb(100, 188, 204);
+}
+#gameBoard {
+    /* width: 50%; */
+    position: relative;
+    left: 165%;
+    /* justify-content: auto; */
+    position: relative;
+    /* margin-top: 320px; */
+    /* margin-left: 345px;*/
+    width: 600px;
+    margin-top: 10%;
+    /* margin-left: 110%; */
+    height: 350px;
+    border: 1px solid #d3d3d3;
+    /* url(img_flwr.gif) right bottom no-repeat, url(paper.gif) left top repeat; */
+    /* background-image: url('..//pictures/cloudsMoving.gif')right bottom no-repeat,url("../pictures/background.jpg") left top repeat; */
+    background-size: 100%;
+    background-position-x: 50%;    
+    background-image: url("../pictures/cloudsMoving.gif");
+
+}
+#groundGameBoard{
+    position: absolute;
+    /* top:25px; */
+    bottom:0%;
+    float:left;
+    width: 600px;
+    z-index: 2;
+}
+#gameLogo{ 
+    width: 55%;
+    position: relative;
+    left: 25%;
+    margin-left: -2.5%;
+}
+
+#imgObstial{
+    width: 50px;
+    height: auto;
+    position: relative;
+    float: right;
+    top: 245px;
+    visibility: visible;
+    border-radius: 360%;
+    z-index: 3;
+}
+#imgPerson{
+    width: 40px;
+    height: auto;
+    position: relative;
+    left: 40px;
+    top: 250px;
+    border-radius: 360%;
+    order:1;
+}
+
+#imgTree{
+    width: 8%;
+    height: auto;
+    position: relative;
+    float: right;
+    top: -90px;
+    visibility: visible;
+    z-index: 1; 
+}
+#game_over{
+    font-size: 36px;
+    align-content: center;
+}
+#scores{
+    opacity: 100% ;
+    text-align: right;
+    margin: 5% 10%; 
+    font-size: 50px;
+}
+#countStarsArea{
+    width: 10%;
+    height: 20px;
+}
+#countStars{
+    position: absolute;
+    top: 15px;
+    float: left;
+    width: 8%;
+    margin: 1%;
+    order:5;
+}
+#counterStars{
+    position: absolute;
+    top: 15px;
+    float: left;
+    left: 10%;
+    width: 8%;
+    margin: 1%;
+    order:5;
+    font-size: 40px;
+    text-align: right;
+}
+#startGame{
+    cursor: pointer;
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 20%;
+    background-color: black;
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    order:2;
+}
+
+#btnSetting,#btnHoues{
+   font-size: 180%;
+   text-decoration: none;
+   margin: 500px 0 0 2%;
+   color: black;
+   cursor: pointer;
+   transition: 0.5s;
+   
+}
+
+
+#btnSetting:hover{
+    transform: scaleZ(0.5);
+    /* transform:skewX() ; */
+}
+
+#setting{
+    display: inherit;
+    font-size: 2vw;
+    position: absolute;
+    left:3%;
+    z-index:10;
+}
+
+#body{
+    width: 50%;
+    display: grid;
+    grid-template:  repeat(2, 40% )/repeat(3, 30%) ;
+    justify-content: space-around;
+}
+
+#person{
+    width: 40px;
+    height: auto;
+    position: relative;
+    left: 40px;
+    top: 25px;
+    z-index: 3;
+}
+
+#titleSetting{
+    font-size: 2vw;
+    font-weight: 900;
+    padding: 5%;
+}
+#options{
+    margin:1%;
+    font-size: 2vw;
+    margin-left: 5%;
+    padding: 5%;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    /* #setting{
+        display: inherit;
+        font-size: 2vw;
+        position: relative;
+        bottom: 0%;
+        left:3%;
+        z-index:10;
+    }     */
+}
+
+

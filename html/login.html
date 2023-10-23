@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>log....</title>
+    <script src="../javaScript/login.js"></script>
+    <link href="../css/login.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+</head>
+
+<body>
+    <a id="guess" href="../html/levels.html">
+        <i class="bi bi-person-circle" id="btnHoues" onclick="showSetting()"></i>
+        sign up as a guesst
+    </a>
+
+    <div id="body">
+        <div id="form">
+            <div id="formIdLogIn">
+                <div id="logInForm" action="">
+                    <div id="h1FormLogIn">Log in and start playing!!!</div>
+                    <input type="name" id="gamerFirstName" required placeholder="first name:" />
+                    <br>
+                    <input type="password" id="gamerPassword" required placeholder="password:" />
+                    <br>
+                    <di id="buttonsContainer">
+                        <br>
+                        <button type="submit" id="login" onclick="logIn()">log in</button>
+                        <br>
+                        <button id="signUpLink">
+                            <a href="..//html/signUp.html">sign up</a>
+                        </button>
+                        <br>
+                        <button type="reset" id="reset">reset</button>
+                        <div>== OR ==</div>
+                        <button id="logInfacebook">
+                            <img src="..//pictures/facebook.png" id="facebook">Log in with facebook</button>
+                        <br>
+                        <button id="logInGoogle">
+                            <img src="..//pictures/google.png" id="google">Log in with google
+                        </button>
+                        <br>
+                    </di>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <img id="ball" src="..//pictures/ball.gif">
+    <img src="../pictures//ground.jpg" id="groundGameBoard"></body>
+</body>
+
+</html>

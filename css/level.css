@@ -1,0 +1,56 @@
+body{
+    background-image: url('..//pictures/cloudsMoving.gif');
+}
+img{
+    width: 80%;
+    margin: 8%;
+    cursor: pointer;
+}
+div
+{
+    margin: 0% 12%;
+    width: 80%;
+    display: grid;
+    grid-template: repeat(3,auto)/repeat(2, auto);
+
+
+}
+#gameLogo{
+    position: relative;
+    left: 25% ;
+    margin: 0%;
+    width: 50%;
+}
+
+#btnSetting,#btnHoues{
+    font-size: 180%;
+    text-decoration: none;
+    margin: 500px 0 0 2%;
+    color: black;
+ }
+
+#videoGame{
+    width: 70%; 
+}
+a{
+  position: relative;
+  margin-top: 5%;
+  left: 10%;  
+}
+.pic{
+    width: 400px;
+    height: 240px;
+    border: 5px white solid;
+    box-shadow: 5px black;
+}
+video{
+  margin: 0%;
+}
+
+a{
+    padding: 0%;
+}
+
+ #containerInstructions{
+     background-color: lightseagreen;
+ }

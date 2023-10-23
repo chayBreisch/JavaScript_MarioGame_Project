@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <title>game</title>
+</head>
+
+<body onload="createBoard()">
+    <header>
+        <a href="levels.html" id="btnSetting" onmouseover="hoverBtn()"><i class="bi bi-house-door"></i></a>
+        <i class="bi bi-gear" id="btnHoues" onclick="showSetting()"></i>
+        <a href="instructions.html" id="btnSetting" onmouseover="hoverBtn()">Instructions<i class="bi bi-arrow"></i></a>
+    </header>
+
+    <audio id="Audio" src="" type="audio/mpeg"></audio>
+    <audio id="audioJump" src="" type="audio/mpeg"></audio>
+    <audio id="gameOverMusic" src="" type="audio/mpeg"></audio>
+    <audio id="starMp" src="" type="audio/mpeg"></audio>
+
+    <img src="../pictures/gameLogo.png" id="gameLogo">
+    <div id="body">
+        <div id="gameBoard">
+            <div id="obstial">
+                <img src="../pictures/car.gif" id="imgObstial">
+            </div>
+            <div id="game_over"></div>
+            <div id="scores">score: 0</div>
+            <button id="startGame" onclick="startGame()">Start Game</button>
+            <div id="person"></div>
+            <img src="../pictures//ground.jpg" id="groundGameBoard">
+            <div id="tree">
+                <img src="..//pictures/star.gif" id="imgTree">
+            </div>
+            <div id="countStarsArea"> 
+                <img src="..//pictures/star.gif" id="countStars">
+                <div id="counterStars">: 0 </div>                
+            </div>
+        </div>
+
+        <div id="setting">
+            <div id="options">
+                <div id="titleSetting">character: </div>
+                <input type="radio" id="pink" name="scales" onclick="ball()">
+                <label for="pink">ball</label>
+                <br>
+                <input type="radio" id="blue" name="scales" onclick="mario()">
+                <label for="blue">mario</label>
+                <br>
+                <input type="radio" id="yellow" name="scales" onclick="sonic()">
+                <label for="yellow">sonic</label>
+                <br>
+            </div>
+
+            <div id="backGoundColor">
+                <div id="options">
+                    <div id="titleSetting">Background Color: </div>
+                    <input type="radio" id="pink" name="scales" onclick="pink()">
+                    <label for="pink">pink</label>
+                    <br>
+                    <input type="radio" id="blue" name="scales" onclick="lightBlue()">
+                    <label for="blue">lightBlue</label>
+                    <br>
+                    <input type="radio" id="blue" name="scales" onclick="blue()">
+                    <label for="blue">blue</label>
+                    <br>
+                    <input type="radio" id="orange" name="scales" onclick="orange()">
+                    <label for="yellow">orange</label>
+                    <br>
+                    <input type="radio" id="dog" name="scales" onclick="gray()">
+                    <label for="gray">gray</label>
+                    <br>
+                    <input type="radio" id="dog" name="scales" onclick="green()">
+                    <label for="green">green</label>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../javaScript/javaScript.js"></script>
+</body>
+
+</html>
